@@ -94,7 +94,7 @@ with that name. Otherwise, the remote name of the repository will be used.
 For example, to clone the main repository for this class, you could run
 
 ```
-git clone https://github.com/anwarmamat/cmsc330spring18-public.git cmsc330
+git clone https://github.com/anwarmamat/cmsc330fall20.git cmsc330
 ```
 
 ### Updating a Cloned Repository

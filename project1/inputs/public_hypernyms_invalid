@@ -1,0 +1,8 @@
+from: z to: 2
+from: 1 to: 3,4
+from: 2 to: 3
+from:3 to: 5 
+from: 4 to: 5
+from: 4 to: 7
+to: 7 from: 6 
+from: 7 to: 5

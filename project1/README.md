@@ -1,6 +1,8 @@
 # Project 1: WordNet
 Due: 14 September 2020, 11:59pm EDT (Late 15 September)
 
+Points: 35 public, 35 semipublic, 30 secret
+
 ## Before You Start
 
 If you have not yet completed [project 0](../project0), you should do so before starting this project.  At the very least, you should have everything related to Ruby installed correctly.  If you have any trouble with installation, check Piazza (or create a post if you don't find your problem there), or come to office hours to get help from a TA.

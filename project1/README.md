@@ -152,7 +152,7 @@ The first part of this project consists of parsing from the synset file and impl
   s.addSet(3, ["c"])
   s.findSynsets("a")             # returns [1, 2]
   s.findSynsets("d")             # returns []
-  s.findSynsets(["a", "c", "d"]) # returns { "a" => [1, 2], "c" => [3], "d" => [] }
+  s.findSynsets(["a", "c", "d"]) # returns { "a" => [1, 2], "c" => [2, 3], "d" => [] }
   s.findSynsets(34)              # returns `nil`
   ```
 

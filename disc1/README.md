@@ -52,7 +52,7 @@ A `Tuple` represents a single entry, in a table.  The methods below will be impl
 #### `self.getNumTuples(n)`
 
 - **Type**: `(Integer) -> Integer`
-- **Description**: Return the number of `Tuple`s of since `n` that have ever been created.  Hint: you should use a static variable to keep track of this.
+- **Description**: Return the number of `Tuple`s of size `n` that have ever been created.  Hint: you should use a static variable to keep track of this.
 - **Examples**:
   ```ruby
   Tuple.getNumTuples(3)         # Returns 0

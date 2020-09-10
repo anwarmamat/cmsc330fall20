@@ -207,12 +207,12 @@ The WordNet environment tracks an instance of `Synsets` and `Hypernyms`, which a
 #### `parse(command)`
 
 - **Type**: `(String) -> Hash`
-- **Description**: Given a `String` command, perform the action defined by the command and return an appropriate response.  Commands may contain arbitrary amounts of leading and/or trailing whitespace, and arguments may be separated by one or more whitespace characters.  If Given a `String` command, perform the action defined by the command and return an appropriate response.  Commands may contain arbitrary amounts of leading and/or trailing whitespace, and arguments may be separated by one or more whitespace characters.  Valid commands are `load`, `lookup`, `find`, `findmany`, and `lca` (behavior described below).  If any other command is given, return `:invalid`.  Otherwise, follow the specific protocol for each command described in the next section.
+- **Description**: Given a `String` command, perform the action defined by the command and return an appropriate response.  Commands may contain arbitrary amounts of leading and/or trailing whitespace, and arguments may be separated by one or more whitespace characters.  If Given a `String` command, perform the action defined by the command and return an appropriate response.  Commands may contain arbitrary amounts of leading and/or trailing whitespace, and arguments may be separated by one or more whitespace characters.  Valid commands are `load`, `lookup`, `find`, `findmany`, and `lca` (behavior described below).  If any other command is given, return `{ recognized_command: :invalid }`.  Otherwise, follow the specific protocol for each command described in the next section.
 - **Examples**:
   ```ruby
   parse("load public_synsets_valid public_hypernyms_valid")   # returns { recognized_command: :load, result: true }
   parse("load public_synsets_valid public_hypernyms_invalid") # returns { recognized_command: :load, result: false }
-  parse("invalid a b")                                        # returns :invalid
+  parse("invalid a b")                                        # returns { recognized_command: :invalid }
   ```
 
 The five allowed commands are described in detail now.  For each, you will return a Hash containing two keys, `:recognized_command` and `:result`.  The values for these keys are set based on the command.  For example, if the command is `load` and the result is `false`, you would return

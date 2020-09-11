@@ -120,9 +120,11 @@ The first part of this project consists of parsing from the synset file and impl
 - **Assumptions**: Assume that the file exists and is readable.
 - **Examples**:
   ```ruby
-  s = Synsets.new
-  s.load("public_synsets_valid")   # returns `nil`
-  s.load("public_synsets_invalid") # returns [2, 6, 7]
+  s1 = Synsets.new
+  s1.load("public_synsets_valid")   # returns `nil`
+
+  s2 = Synsets.new
+  s2.load("public_synsets_invalid") # returns [2, 6, 7]
   ```
 
 #### `lookup(synset_id)`
@@ -179,9 +181,11 @@ The second part of this project requires you to construct and operate on a graph
 - **Assumptions**: Assume that the file exists and is readable.
 - **Examples**:
   ```ruby
-  h = Hypernyms.new
-  h.load("public_hypernyms_valid")   # returns `nil`
-  h.load("public_hypernyms_invalid") # returns [1, 4, 7]
+  h1 = Hypernyms.new
+  h1.load("public_hypernyms_valid")   # returns `nil`
+
+  h2 = Hypernyms.new
+  h2.load("public_hypernyms_invalid") # returns [1, 4, 7]
   ```
 
 #### `lca(id1, id2)`
@@ -207,12 +211,12 @@ The WordNet environment tracks an instance of `Synsets` and `Hypernyms`, which a
 #### `parse(command)`
 
 - **Type**: `(String) -> Hash`
-- **Description**: Given a `String` command, perform the action defined by the command and return an appropriate response.  Commands may contain arbitrary amounts of leading and/or trailing whitespace, and arguments may be separated by one or more whitespace characters.  If Given a `String` command, perform the action defined by the command and return an appropriate response.  Commands may contain arbitrary amounts of leading and/or trailing whitespace, and arguments may be separated by one or more whitespace characters.  Valid commands are `load`, `lookup`, `find`, `findmany`, and `lca` (behavior described below).  If any other command is given, return `:invalid`.  Otherwise, follow the specific protocol for each command described in the next section.
+- **Description**: Given a `String` command, perform the action defined by the command and return an appropriate response.  Commands may contain arbitrary amounts of leading and/or trailing whitespace, and arguments may be separated by one or more whitespace characters.  If Given a `String` command, perform the action defined by the command and return an appropriate response.  Commands may contain arbitrary amounts of leading and/or trailing whitespace, and arguments may be separated by one or more whitespace characters.  Valid commands are `load`, `lookup`, `find`, `findmany`, and `lca` (behavior described below).  If any other command is given, return `{ recognized_command: :invalid }`.  Otherwise, follow the specific protocol for each command described in the next section.
 - **Examples**:
   ```ruby
   parse("load public_synsets_valid public_hypernyms_valid")   # returns { recognized_command: :load, result: true }
   parse("load public_synsets_valid public_hypernyms_invalid") # returns { recognized_command: :load, result: false }
-  parse("invalid a b")                                        # returns :invalid
+  parse("invalid a b")                                        # returns { recognized_command: :invalid }
   ```
 
 The five allowed commands are described in detail now.  For each, you will return a Hash containing two keys, `:recognized_command` and `:result`.  The values for these keys are set based on the command.  For example, if the command is `load` and the result is `false`, you would return

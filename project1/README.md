@@ -181,9 +181,11 @@ The second part of this project requires you to construct and operate on a graph
 - **Assumptions**: Assume that the file exists and is readable.
 - **Examples**:
   ```ruby
-  h = Hypernyms.new
-  h.load("public_hypernyms_valid")   # returns `nil`
-  h.load("public_hypernyms_invalid") # returns [1, 4, 7]
+  h1 = Hypernyms.new
+  h1.load("public_hypernyms_valid")   # returns `nil`
+
+  h2 = Hypernyms.new
+  h2.load("public_hypernyms_invalid") # returns [1, 4, 7]
   ```
 
 #### `lca(id1, id2)`

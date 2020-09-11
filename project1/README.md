@@ -120,9 +120,11 @@ The first part of this project consists of parsing from the synset file and impl
 - **Assumptions**: Assume that the file exists and is readable.
 - **Examples**:
   ```ruby
-  s = Synsets.new
-  s.load("public_synsets_valid")   # returns `nil`
-  s.load("public_synsets_invalid") # returns [2, 6, 7]
+  s1 = Synsets.new
+  s1.load("public_synsets_valid")   # returns `nil`
+
+  s2 = Synsets.new
+  s2.load("public_synsets_invalid") # returns [2, 6, 7]
   ```
 
 #### `lookup(synset_id)`

@@ -46,7 +46,7 @@ You will submit this project to [Gradescope](https://www.gradescope.com/courses/
   ```ruby
   time_str = "12:37:59 P.M."
   time_teller(time_str) # "It is 12 P.M."
-  time_str = "1:02:14 A.M."
+  time_str = "01:02:14 A.M."
   time_teller(time_str) # "It is 1 A.M."
   time_str = "15:19:06"
   time_teller(time_str) # "Invalid"

@@ -1,5 +1,5 @@
 # Project 2a: OCaml Warmup
-Due: 28 September 2020, 11:59pm EDT (Late 29 September)
+Due: 29 September 2020, 11:59pm EDT (Late 30 September)
 
 Points: 65 public, 20 semipublic, 15 secret
 

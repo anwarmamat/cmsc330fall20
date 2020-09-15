@@ -17,6 +17,8 @@ In your code, you may **only** use library functions found in the [`Stdlib` modu
 
 You will submit this project to [Gradescope](https://www.gradescope.com/courses/171498/assignments/667131).  You may only submit the **basics.ml** file.  To test locally, run `dune runtest -f`.
 
+You may also find [this video](https://www.youtube.com/watch?v=C36JnAcClOQ&t=21s) helpful for debugging your project.
+
 ### Project Files
 
 The following are the relevant files for your code:

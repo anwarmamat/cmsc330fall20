@@ -9,7 +9,7 @@ This exercise consists of a few short functions to help you familiarize yourself
 
 ### Testing & Submitting
 
-You will submit this project to [Gradescope](https://www.gradescope.com/courses/171498/assignments/681774).  You may only submit the **disc3.rb** file.  To test locally, run `ruby test/public/public.rb`.
+You will submit this project to [Gradescope](https://www.gradescope.com/courses/171498/assignments/681774).  You may only submit the **disc3.rb** file.  To test locally, run `dune runtest -f`.
 
 ## Part 1: Type inference
 

@@ -152,7 +152,7 @@ Implement the following functions using recursion.
   is_prime 5 = true
   is_prime 60 = false
   is_prime 61 = true
-  is_prime -2 = false
+  is_prime (-2) = false
   ```
 
 #### `next_prime x`
@@ -166,7 +166,7 @@ Implement the following functions using recursion.
   next_prime 3 = 3
   next_prime 4 = 5
   next_prime 60 = 61
-  next_prime -20 = 2
+  next_prime (-20) = 2
   ```
 
 ## Part 3: Lists

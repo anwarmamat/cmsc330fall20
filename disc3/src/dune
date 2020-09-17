@@ -1,0 +1,5 @@
+(library
+  (name disc3))
+(env
+  (dev
+    (flags (:standard -w -27-39-8-32))))

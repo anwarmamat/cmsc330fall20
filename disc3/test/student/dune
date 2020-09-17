@@ -1,0 +1,3 @@
+(tests
+  (names student)
+  (libraries disc3 oUnit))

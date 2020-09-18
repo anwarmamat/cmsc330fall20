@@ -9,7 +9,7 @@ This exercise consists of a few short functions to help you familiarize yourself
 
 ### Testing & Submitting
 
-You will submit this project to [Gradescope](https://www.gradescope.com/courses/171498/assignments/681774).  You may only submit the **disc3.rb** file.  To test locally, run `ruby test/public/public.rb`.
+You will submit this project to [Gradescope](https://www.gradescope.com/courses/171498/assignments/681774).  You may only submit the **disc3.rb** file.  To test locally, run `dune runtest -f`.
 
 ## Part 1: Type inference
 
@@ -84,11 +84,11 @@ You will have to fill in definitions for the functions `tf1`, `tf2`, `tf3` such 
 
 #### `filter n lst`
 
-- **Type**: `int -> int list -> int list`
-- **Description**: Given an integer `n` and a list `lst`, Remove elements from `lst` that are less than `n`.
+- **Type**: ``a -> `a list -> `a list`
+- **Description**: Given `n` and a list `lst`, remove elements from `lst` that are greater than `n`.
 - **Examples**:
   ```ocaml
-  filter 3 [1; 2; 3; 3; 2; 1] = [1; 2; 2; 1]
+  filter 2 [1; 2; 3; 3; 2; 1] = [1; 2; 2; 1]
   filter 5 [-1; 2; 3; 4] = [-1; 2; 3; 4]
   ```
 

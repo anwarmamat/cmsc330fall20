@@ -214,7 +214,7 @@ Implement the following functions using recursion.
 #### `combine lst1 lst2`
 
 - **Type**: `'a list -> 'a list -> 'a list`
-- **Description**: Returns a list with the elements of `lst1` followed by the elements of `lst2`. The elements within each list must be in the same order.
+- **Description**: Returns a list with the elements of `lst1` followed by the elements of `lst2`. The elements within each list must be in the same order.  You may **not** use the `@` operator to write this function (that is, in this function or any helper functions).
 - **Examples**:
   ```ocaml
   combine [] [] = []

@@ -25,7 +25,7 @@ let test_filter _ =
     assert_equal [1;2;3;4] (filter 5 [1;2;3;4]);
     assert_equal [] (filter 0 [1;2;3;4])
 
-let test_double =
+let test_double _ =
     assert_equal [1;1;2;2;3;3] (double [1;2;3]);
     assert_equal ["a"; "a"; "b"; "b"] (double ["a"; "b"]);
     assert_equal [] (double [])

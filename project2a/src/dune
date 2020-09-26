@@ -1,0 +1,5 @@
+(library
+  (name basics))
+(env
+  (dev
+    (flags (:standard -w -27-39))))

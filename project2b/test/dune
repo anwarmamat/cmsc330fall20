@@ -1,0 +1,3 @@
+(library
+  (name testUtils)
+  (libraries p2b oUnit))

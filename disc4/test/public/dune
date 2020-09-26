@@ -1,0 +1,3 @@
+(tests
+  (names public)
+  (libraries disc4 oUnit))

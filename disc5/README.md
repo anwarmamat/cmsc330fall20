@@ -82,9 +82,9 @@ Now, we would represent the above list as `Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons
 - **Description**: Converts a lengthlist into its equivalent Ocaml list.
 - **Examples**:
   ```ocaml
-  lengthlist Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons(4, 1, Empty)))) = [1;1;1;1;2;2;2;3;3;4]
+  lengthlist (Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons(4, 1, Empty))))) = [1;1;1;1;2;2;2;3;3;4]
   lengthlist Empty = []
-  lengthlist Cons("hi", 2, Cons("hello", 3, Empty)) = ["hi"; "hi"; "hello"; "hello"; "hello"]
+  lengthlist (Cons("hi", 2, Cons("hello", 3, Empty))) = ["hi"; "hi"; "hello"; "hello"; "hello"]
   ```
 
 #### `map fn llst`
@@ -93,8 +93,8 @@ Now, we would represent the above list as `Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons
 - **Description**: Recreate the map function, but for lengthlists. Note that we only operate on the elements, and not the number of each element.
 - **Examples**:
   ```ocaml
-  map (+ 3) Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons(4, 1, Empty)))) = Cons(4, 4, Cons(5, 3, Cons(6, 2, Cons(7, 1, Empty))))
-  map string_of_int Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons(4, 1, Empty)))) = Cons("1:, 4, Cons("2", 3, Cons("3", 2, Cons("4", 1, Empty))))
+  map (+ 3) (Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons(4, 1, Empty))))) = Cons(4, 4, Cons(5, 3, Cons(6, 2, Cons(7, 1, Empty))))
+  map string_of_int (Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons(4, 1, Empty))))) = Cons("1:, 4, Cons("2", 3, Cons("3", 2, Cons("4", 1, Empty))))
   ```
 
 #### `decrement_count llst`
@@ -103,8 +103,8 @@ Now, we would represent the above list as `Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons
 - **Description**: Remove one of each element in the lengthlist. If the number of an element decreases to 0, remove it from the list entirely
 - **Examples**:
   ```ocaml
-  decrement_count Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons(4, 1, Empty)))) = Cons(1, 3, Cons(2, 2, Cons(3, 1, Empty)))
-  decrement_count Cons(1, 4, Cons(2, 3, Empty)) = Cons(1, 3, Cons(2, 2, Empty))
-  decrement_count Cons("str", 1, Empty) = Empty
+  decrement_count (Cons(1, 4, Cons(2, 3, Cons(3, 2, Cons(4, 1, Empty))))) = Cons(1, 3, Cons(2, 2, Cons(3, 1, Empty)))
+  decrement_count (Cons(1, 4, Cons(2, 3, Empty))) = Cons(1, 3, Cons(2, 2, Empty))
+  decrement_count (Cons("str", 1, Empty)) = Empty
   decrement_count Empty = Empty
   ```

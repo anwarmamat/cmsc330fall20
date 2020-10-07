@@ -12,7 +12,7 @@ val pinsert : 'a -> 'a ptree -> 'a compfn * 'a atree
 val pmem : 'a -> 'a ptree -> bool
 val pinsert_all : 'a list -> 'a ptree -> 'a ptree
 val p_as_list : 'a * 'b atree -> 'b list
-val pmap : ('a -> 'b) -> 'b compfn * 'a atree -> 'b ptree
+val pmap : ('a -> 'a) -> 'a compfn * 'a atree -> 'a ptree
 type lookup_table
 val empty_table : unit -> lookup_table
 val push_scope : lookup_table -> lookup_table

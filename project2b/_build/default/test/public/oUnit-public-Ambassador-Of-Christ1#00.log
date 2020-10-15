@@ -1,0 +1,122 @@
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Runner: processes
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Chooser: simple
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration suite_name = "public"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration cache_filename = "/home/d/cmsc330fall20/project2b/_build/default/test/public/oUnit-$(suite_name).cache"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration run_gc_full_major = "true"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration display = "true"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration results_style_1_X = "false"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration testdata_dir = "none"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration health_check_interval = "1."
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration verbose = "false"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration chooser = "simple"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration output_html_dir = "none"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration processes_kill_period = "5."
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration runner = "processes"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration shards = "2"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration processes_grace_period = "5."
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration log_encoding = "utf-8"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration output_junit_file = "none"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration ci = "false"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Configuration output_file = "/home/d/cmsc330fall20/project2b/_build/default/test/public/oUnit-$(suite_name)-$(shard_id).log"
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Using 2 workers maximum.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Starting worker number Ambassador-Of-Christ1#01.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Worker Ambassador-Of-Christ1#01 started.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Starting worker number Ambassador-Of-Christ1#02.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Worker Ambassador-Of-Christ1#02 started.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:1:uniq, public:0:count_occ.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Start test public:0:count_occ.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:1:uniq, public:0:count_occ.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Test public:0:count_occ is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:1:uniq, public:0:count_occ.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: End test public:0:count_occ.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:1:uniq, public:0:count_occ.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:2:assoc_list, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Start test public:2:assoc_list.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:2:assoc_list, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: Start test public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:2:assoc_list, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Test public:2:assoc_list is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:2:assoc_list, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: End test public:2:assoc_list.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:2:assoc_list, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:3:ap, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Start test public:3:ap.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:3:ap, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: Test public:1:uniq is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Test public:3:ap is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:3:ap, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: End test public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: End test public:3:ap.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:3:ap, public:1:uniq.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:5:ptree_1, public:4:int_tree.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Start test public:4:int_tree.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: Start test public:5:ptree_1.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:5:ptree_1, public:4:int_tree.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Test public:4:int_tree is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:5:ptree_1, public:4:int_tree.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: End test public:4:int_tree.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:5:ptree_1, public:4:int_tree.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:6:ptree_2, public:5:ptree_1.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Start test public:6:ptree_2.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:6:ptree_2, public:5:ptree_1.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: Test public:5:ptree_1 is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:6:ptree_2, public:5:ptree_1.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: End test public:5:ptree_1.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:6:ptree_2, public:5:ptree_1.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:7:var, public:6:ptree_2.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: Start test public:7:var.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:7:var, public:6:ptree_2.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Test public:6:ptree_2 is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:7:var, public:6:ptree_2.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: End test public:6:ptree_2.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:7:var, public:6:ptree_2.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:8:scopes, public:7:var.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Start test public:8:scopes.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:8:scopes, public:7:var.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: Test public:7:var is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:8:scopes, public:7:var.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: End test public:7:var.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:8:scopes, public:7:var.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: Test public:8:scopes is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Still 2 tests running : public:9:shape, public:8:scopes.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:9:shape, public:8:scopes.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#01 I: End test public:8:scopes.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: Start test public:9:shape.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Still 2 tests running : public:9:shape, public:8:scopes.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 2 tests running: public:9:shape, public:8:scopes.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Still 1 tests running : public:9:shape.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 1 tests running: public:9:shape.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: Test public:9:shape is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Still 1 tests running : public:9:shape.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 1 tests running: public:9:shape.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#02 I: End test public:9:shape.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Still 1 tests running : public:9:shape.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 1 tests running: public:9:shape.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: 0 tests running: .
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Worker Ambassador-Of-Christ1#01 has ended.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Worker Ambassador-Of-Christ1#02 has ended.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Used 2 worker during test execution.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Run 6 tests with shard Ambassador-Of-Christ1#01.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Run 4 tests with shard Ambassador-Of-Christ1#02.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Check health of shard Ambassador-Of-Christ1#01, 4 times.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Check health of shard Ambassador-Of-Christ1#02, 1 times.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: ==============
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Summary:
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:9:shape is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:8:scopes is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:7:var is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:6:ptree_2 is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:5:ptree_1 is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:4:int_tree is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:3:ap is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:1:uniq is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:2:assoc_list is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Test public:0:count_occ is successful.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Ran: 10 tests in: 0.29 seconds.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Cases: 10.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Tried: 10.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Errors: 0.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Failures: 0.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Skip: 0.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Todo: 0.
+2020-10-08T07:36:32+00:00 Ambassador-Of-Christ1#00 I: Timeout: 0.

@@ -26,6 +26,16 @@ class PublicTests < MiniTest::Test
         assert_equal([2, 6, 7], @synsets.load($INVALID_SYNSETS)) 
     end
 
+    def test_public_synsets_load_Valid_invalid
+        assert_nil(@synsets.load($VALID_SYNSETS))
+        assert_equal([1, 2, 3, 4, 5, 6, 7, 8], @synsets.load($INVALID_SYNSETS)) 
+    end
+
+    def test_public_synsets_load_invalid_Valid
+        assert_equal([2, 6, 7], @synsets.load($INVALID_SYNSETS)) 
+        assert_nil(@synsets.load($VALID_SYNSETS))
+    end
+
     def test_public_synsets_lookup
         @synsets.load($VALID_SYNSETS)
         assert_equal(["a"], @synsets.lookup(0))

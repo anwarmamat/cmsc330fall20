@@ -1,0 +1,18 @@
+EXCLUDE_QUERY_DIR
+B /home/d/.opam/4.11.0/lib/bytes
+B /home/d/.opam/4.11.0/lib/oUnit
+B /home/d/.opam/4.11.0/lib/ocaml
+B /home/d/.opam/4.11.0/lib/ounit2
+B /home/d/.opam/4.11.0/lib/ounit2/advanced
+B /home/d/.opam/4.11.0/lib/stdlib-shims
+B ../../_build/default/src/.disc3.objs/byte
+B ../../_build/default/test/student/.student.eobjs/byte
+S /home/d/.opam/4.11.0/lib/bytes
+S /home/d/.opam/4.11.0/lib/oUnit
+S /home/d/.opam/4.11.0/lib/ocaml
+S /home/d/.opam/4.11.0/lib/ounit2
+S /home/d/.opam/4.11.0/lib/ounit2/advanced
+S /home/d/.opam/4.11.0/lib/stdlib-shims
+S ../../src
+S .
+FLG -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs

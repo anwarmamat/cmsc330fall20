@@ -56,12 +56,12 @@ class Graph
     def bfs(origin)
         raise ArgumentError unless @edges.has_key? origin
 
-        q = [[origin, 0]]
-        r = {}
+        q = [[origin, 0]] #Queue
+        r = {} #result Hash with IDs and their distance from the origin (distance of origin to itself is 0).
         v = [origin]
 
         while not q.empty?
-            curr, dist = q.shift
+            curr, dist = q.shift # meaning curr = origin and dist = 0. The variable changes values in the loop.
             r[curr] = dist
             unvisited_neighbors = @edges[curr].select{|e| not v.include? e}
             unvisited_neighbors.each{|n|

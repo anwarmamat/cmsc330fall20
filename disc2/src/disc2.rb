@@ -6,7 +6,13 @@
 # by 2. Assume values are ints
 # Use a code block.
 def evens_string(hash)
-    raise "unimplemented"
+    str = ""
+    hash.values.each {|v| 
+        if v % 2 == 0 
+            str += v.to_s
+        end
+    }
+    str
 end
 
 # Now let's up the stakes
@@ -19,7 +25,13 @@ end
 # simply return an array where
 # every element is increased by 1
 def map_w_code_block(arr)
-    raise "unimplemented"
+    if block_given?
+        newArr = arr.collect {|x| yield x}
+        return newArr
+    else
+       arr.collect! {|k| k + 1}
+       arr
+    end
 end
 
 
@@ -46,7 +58,13 @@ end
 # If I give you ANYTHING else
 # return the string "Invalid"
 def time_teller(time_str)
-    raise "unimplemented"
+    if time_str =~ /^(0[0-9]|1[0-2]):[0-5][0-9]:[0-5][0-9] (A.M.|P.M.)$/
+        hours = $1
+        am_or_pm = $2
+        "It is #{hours} #{am_or_pm}"
+    else
+        "Invalid"
+    end
 end
 
 
@@ -65,9 +83,17 @@ class Grader
     def initialize(filename)
         # initialize some relevant data
         # structure here
-        File.foreach(filename) do |line|
-            # code here
-        end
+        @hash = Hash.new
+        file = File.open(filename, "r")
+        fileArr = file.readlines()
+        fileArr.each{|line|
+            if line =~ /^([A-Z][a-z]+\s[A-Z][a-z]+),\s([0-9]|[1-9][0-9]|100)$/
+                name = $1
+                grade = $2.to_i
+                @hash[name] = grade
+            end
+        }
+        file.close
     end
 
     # Because 330 is so great,
@@ -77,12 +103,14 @@ class Grader
     # we pass in. Update your data
     # to add this extra credit
     def add_extra_credit()
-        raise "unimplemented"
+        for key in @hash.keys
+            @hash[key] = yield @hash[key]
+        end
     end
 
     # Return the grade for the
     # specified student
     def get_grades_for_student(student_Name)
-        raise "unimplemented"
+        @hash[student_Name]
     end
 end

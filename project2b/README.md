@@ -225,17 +225,17 @@ Just as was the case in the previous part, if trying to insert an element into t
 
 #### `p_as_list t`
 
-- **Type**: `'a ptree -> 'a list`
+- **Type**: `'a * 'b atree -> 'b list`
 - **Description**: Returns a list where the values correspond to an [in-order traversal][wikipedia inorder traversal] on tree `t`.
 - **Examples**:
   ```ocaml
   p_as_list (pinsert 2 (pinsert 1 t0)) = [1;2]
-  p_as_list (p_insert 2 (p_insert 2 (p_insert 3 t0))) = [2;3]
+  p_as_list (pinsert 2 (pinsert 2 (pinsert 3 t0))) = [2;3]
   ```
 
 #### `pmap f t`
 
-- **Type**: `('a -> 'a) -> 'a ptree -> 'a ptree`
+- **Type**: `('a -> 'b) -> 'b compfn * 'a atree -> 'b ptree`
 - **Description**: Returns a tree where the function `f` is applied to all the elements of `t`.
 - **Examples**:
   ```ocaml

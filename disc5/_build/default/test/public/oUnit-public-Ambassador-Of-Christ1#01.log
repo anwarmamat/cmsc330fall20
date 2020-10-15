@@ -1,0 +1,12 @@
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: Start test public:0:mul_n.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: Test public:0:mul_n is successful.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: End test public:0:mul_n.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: Start test public:2:list_of_option.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: Test public:2:list_of_option is successful.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: End test public:2:list_of_option.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: Start test public:3:match_key.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: Test public:3:match_key is successful.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: End test public:3:match_key.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: Start test public:5:map_lengthlist.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: Test public:5:map_lengthlist is successful.
+2020-10-02T00:48:33+00:00 Ambassador-Of-Christ1#01 I: End test public:5:map_lengthlist.

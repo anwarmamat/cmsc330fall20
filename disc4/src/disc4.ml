@@ -34,19 +34,27 @@
         gpa : float;
     } 
 
-  (*Implement these functions*)
+  (*Implement these functions*) 
+  (*Will use pattern in the (fun ...)*)
   let mul_thresh lst thresh = 
-      failwith "unimplemented"
+      foldl (fun (less, greaterEqual) x -> if x < thresh then (less * x, greaterEqual) else (less, greaterEqual * x)) (1,1) lst;;
   
   let multi_map f lst = 
-      failwith "unimplemented" 
+      map (fun x -> map f x) lst;; (*take a listA out of lst (list of list) and apply the func f to all elements in listA*)
   
   let update_database lst = 
-      failwith "unimplemented"
+      map (fun (a, b, c) -> {name = a; age = b; gpa = c}) lst;;
   
   let stalin_sort lst = 
-      failwith "unimplemented"
+      match lst with
+      | [] -> []
+      | h::t -> match (foldl (fun (prev_elem, acc) x -> if x >= prev_elem then (x, acc @ [x]) else (prev_elem, acc)) (h, []) lst) with
+                  |(elem, acc_result) -> acc_result;;
+
   
   let stalin_sort_right lst = 
-      failwith "unimplemented"
+      match lst with
+      | [] -> []
+      | h::t -> match (foldr (fun x (prev_elem, acc) -> if x <= prev_elem then (x, (x::acc)) else (prev_elem, acc)) lst (get_last_element lst, [])) with
+                  |(elem, acc_result) -> acc_result;;
   

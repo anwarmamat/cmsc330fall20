@@ -1,0 +1,8 @@
+(** @canonical P2b.Data *)
+module Data = P2b__Data
+
+(** @canonical P2b.Funs *)
+module Funs = P2b__Funs
+
+(** @canonical P2b.Higher *)
+module Higher = P2b__Higher

@@ -16,7 +16,7 @@ let end_str = "\n}"
 
 let nodup x lst = if List.mem x lst then lst else x :: lst
 
-let string_of_vtx show lst =
+let string_of_vtx _ lst =
   List.fold_left
     (fun acc (v, f) ->
       let shape = if f then "doublecircle" else "circle" in
@@ -25,9 +25,9 @@ let string_of_vtx show lst =
       )
     "" lst
 
-let string_of_ed show lst =
+let string_of_ed _ lst =
   List.fold_left
-    (fun acc ((s1, _), c, p, (s2, _)) ->
+    (fun acc ((s1, _), c, _, (s2, _)) ->
       acc
       ^ Printf.sprintf "%d -> %d [label=\"%s\"];\n" (Hashtbl.hash s1)
           (Hashtbl.hash s2) c )

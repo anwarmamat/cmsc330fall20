@@ -1,3 +1,4 @@
 (executable
   (name viz)
-  (libraries str p3))
+  (libraries str p3)
+  (modes byte exe))

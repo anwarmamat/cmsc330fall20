@@ -1,0 +1,3 @@
+(tests
+    (names public)
+    (libraries str p3 oUnit testUtils))

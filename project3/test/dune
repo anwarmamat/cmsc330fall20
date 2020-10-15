@@ -1,0 +1,3 @@
+(library
+  (name testUtils)
+  (libraries str p3 oUnit))

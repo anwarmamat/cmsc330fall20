@@ -1,0 +1,9 @@
+[course]
+id = 171498
+name = "CMSC330"
+term = "Fall 2020"
+
+[assignment]
+id = 786590
+name = "Project 4a"
+files = [ "src/lexer.ml", "src/parser.ml" ]

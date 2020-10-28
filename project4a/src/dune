@@ -1,0 +1,7 @@
+(library
+  (name p4a)
+  (modules lexer smallCTypes utils parser tokenTypes)
+  (libraries str))
+(env
+  (dev
+    (flags (:standard -w -27-32-33-34-39))))

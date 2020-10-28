@@ -1,0 +1,4 @@
+(tests
+  (names public)
+  (deps (source_tree ./data))
+  (libraries p4a oUnit testUtils))

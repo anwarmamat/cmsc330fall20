@@ -42,7 +42,7 @@ To test from the toplevel, run `dune utop src`.  The necessary functions and typ
 All of our tests will feed C code into your program to be lexed and parsed.  You can write your own tests which only test the parser by feeding it a custom token list.  For example, to see how the expression `1 + 2 ^ 3 * 4` would be parsed, you can construct the token list manually (e.g. in Utop):
 
 ```ocaml
-parse_expr [Tok_Int 1; Tok_Add; Tok_Int 3; Tok_Pow; Tok_Int 3; Tok_Mult; Tok_Int 4; EOF];;
+parse_expr [Tok_Int 1; Tok_Add; Tok_Int 2; Tok_Pow; Tok_Int 3; Tok_Mult; Tok_Int 4; EOF];;
 ```
 
 This way, you can work on the parser even if your lexer is not complete yet.

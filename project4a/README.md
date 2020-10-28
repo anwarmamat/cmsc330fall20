@@ -31,7 +31,7 @@ In your code, you may use any non-imperative OCaml modules and features we have 
 
 ### Testing & Submitting
 
-**NEW**: You can now submit directly from the command-line!  You must have `gradescope-submit` installed, if you don't please see [the setup page](https://github.com/anwarmamat/cmsc330fall20/submit_setup.md).  Then you can run `gradescope-submit` from the project directory and the project will be automatically submitted (you'll have to enter your username and password the first time).
+**NEW**: You can now submit directly from the command-line!  You must have `gradescope-submit` installed, if you don't please see [the setup page](https://github.com/anwarmamat/cmsc330fall20/tree/master/submit_setup.md).  Then you can run `gradescope-submit` from the project directory and the project will be automatically submitted (you'll have to enter your username and password the first time).
 
 You can also still submit as before to [Gradescope](https://www.gradescope.com/courses/171498/assignments/786590).  You may only submit the **lexer.ml** and **parser.ml** files.  To test locally, run `dune runtest -f`.
 

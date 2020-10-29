@@ -1,0 +1,3 @@
+(tests
+  (names public)
+  (libraries d8 str oUnit))

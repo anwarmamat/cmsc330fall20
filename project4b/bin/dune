@@ -1,0 +1,4 @@
+(executable
+  (name interface)
+  (libraries str p4b)
+  (modes byte exe))

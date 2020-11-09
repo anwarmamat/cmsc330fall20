@@ -1,0 +1,4 @@
+(tests
+  (names student)
+  (deps (source_tree ./data))
+  (libraries p4b oUnit testUtils))

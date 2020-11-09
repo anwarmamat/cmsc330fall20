@@ -1,5 +1,5 @@
 # Project 4B: SmallC Interpreter
-Due 16 November at 11:59pm EST (Late: 17 November at 11:59pm)
+Due 19 November at 11:59pm EST (Late: 20 November at 11:59pm)
 
 P/SP/S: 50/50/0
 

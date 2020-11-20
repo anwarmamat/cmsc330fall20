@@ -1,0 +1,78 @@
+/* Content */
+
+body {
+  
+  font-size: larger;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url("https://sitejerk.com/images/transparent-spider-web-4.png");
+
+}
+
+p {
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  
+}
+
+main { width: 50%; background: white}
+
+/* Auxiliary */
+.grid {
+  display: flex;
+  padding-top: 1em;
+}
+
+.user {
+  width: 8em;
+  margin-right: 4em;
+}
+
+.user h2 { margin-top: 0; }
+
+/* Menu */
+nav { margin-top: 2em; }
+
+section, nav { margin-bottom: 2em; }
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li { float: left; }
+
+nav li a {
+  display: block;
+  margin-right: 2em;
+  text-decoration: none;
+}
+
+/* Other */
+.avatar {
+  width: 8em;
+  margin-bottom: 1em;
+}
+
+.box {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.box-avatar {
+  width: 4em;
+  height: 4em;
+  margin-right: 1em;
+}
+
+.box-body { flex: 1; }
+
+/* Yet More */
+input { display: block; }
+
+form div { padding: 0.5em; }
+
+textarea { display: block; }

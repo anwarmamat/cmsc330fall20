@@ -1,0 +1,26 @@
+<% if query then %> <h2> Searching for "<%= query %>" </h2> <% end %>
+
+<section>
+  <form method="get" action="">
+  <fieldset>
+  <div>
+    <input type="text" placeholder="Find a user" name="q">
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+  </fieldset>
+  </form>
+</section>
+
+<section>
+  <% users.each do |user| %>
+    <div class="box">
+      <img class="box-avatar" src="/avatars/<%= user[:avatar] %>" />
+      <div class="box-body">
+        <a href="/user?q=<%= user[:name] %>"><%= user[:name] %></a>
+        <p> <%= user[:description] %> </p>
+      </div>
+    </div>
+  <% end %>
+</section>

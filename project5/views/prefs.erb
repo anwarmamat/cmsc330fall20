@@ -1,0 +1,15 @@
+<section>
+  <form method="post" action="">
+  <input type="hidden" value="<%= token %>" name="token">
+  <fieldset>
+  <legend>Preferences</legend>
+  <div>
+    <label>Description</label>
+    <textarea name="description"><%= user[:description] %></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+  </fieldset>
+  </form>
+</section>

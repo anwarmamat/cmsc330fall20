@@ -1,0 +1,24 @@
+<% if user then %>
+<div class="grid">
+  <section class="user">
+    <img class="avatar" src="/avatars/<%= user[:avatar] %>" />
+    <h2> <%= params[:user] %> </h2>
+    <%= user[:description] %>
+  </section>
+
+  <section class="posts">
+    <% posts.each do |post| %>
+      <div class="box">
+        <img class="box-avatar" src="/avatars/<%= post[:avatar] %>" />
+        <div class="box-body">
+          <a href="/user?q=<%= post[:user] %>"><%= post[:user] %></a> ◇ <%= post[:date] %>
+          <p> <%= post[:content] %> </p>
+        </div>
+      </div>
+    <% end %>
+  </section>
+</div>
+<% else %>
+<h2> We could not find that user. </h2>
+<% end %>
+

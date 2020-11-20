@@ -1,0 +1,25 @@
+<section>
+  <form method="post" action="">
+  <input type="hidden" value="<%= token %>" name="token">
+  <fieldset>
+  <div>
+    <input type="text" placeholder="Say something clever" name="content">
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+  </fieldset>
+  </form>
+</section>
+
+<section>
+  <% posts.each do |post| %>
+    <div class="box">
+      <img class="box-avatar" src="/avatars/<%= post[:avatar] %>" />
+      <div class="box-body">
+        <a href="/user?q=<%= post[:user] %>"><%= post[:user] %></a> ◇ <%= post[:date] %>
+        <p> <%= post[:content] %> </p>
+      </div>
+    </div>
+  <% end %>
+</section>

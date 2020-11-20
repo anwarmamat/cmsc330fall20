@@ -37,6 +37,8 @@ Remember to run `ruby src/main.rb` after changing `controller.rb`. Otherwise, ch
 
 ## Troubleshooting
 
+NOTE: we use `apt-get` below.  You need to use the package manager on your system (e.g. `brew` on mac)
+
 - If you don't have bundler, use `gem install bundler` (on Bash for Windows 10 you need to specify the full path when you call `bundle` which can be found with `gem which bundler`).
 - If you don't have SQLite3, use `sudo apt-get install sqlite3`.
 - If you're getting an issue where Ruby headers cannot be found run `sudo apt-get install ruby-dev`.

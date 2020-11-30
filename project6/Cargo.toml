@@ -1,0 +1,7 @@
+[package]
+name = "stark_suit_repair"
+version = "0.1.0"
+authors = ["Vinnie Caprarola <vinnie@vcaprarola.me>"]
+edition = "2018"
+
+[dependencies]

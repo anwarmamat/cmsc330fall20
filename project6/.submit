@@ -1,0 +1,9 @@
+[course]
+id = 171498
+name = "CMSC330"
+term = "Fall 2020"
+
+[assignment]
+id = 874835
+name = "Project 6"
+files = [ "src/basics.rs", "src/communicator.rs", "src/locator.rs" ]

@@ -7,8 +7,6 @@ Ground Rules
 ---------------------------
 **This is an individual assignment. You must work on this project alone.**
 
-**This is an extra-credit project, so the good-faith attempt does not apply.  You are not required to submit this project.  However, the same rules for academic integrity still apply.**
-
 For this project you are allowed to use the library functions found in `std`, including `Vec`, `String`, `collections::HashMap`, and `Box`.
 
 However, you may **NOT** use `collections::BinaryHeap` for your implementation.  You must create your own.
